@@ -1,0 +1,3 @@
+project: fraud_dev
+registry: local/registry.db
+provider: gcp
