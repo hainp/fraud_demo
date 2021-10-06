@@ -30,7 +30,7 @@ user_account_fv = FeatureView(
     entities=["user_id"],
     ttl=timedelta(weeks=52),
     batch_source=BigQuerySource(
-        table_ref="feast-oss.fraud_tutorial.user_account_features",
+        table_ref=f"{PROJECT_ID}.{BIGQUERY_DATASET_NAME}.user_account_features",
         event_timestamp_column="feature_timestamp"))
 
 user_has_fraudulent_transactions_fv = FeatureView(
@@ -38,5 +38,5 @@ user_has_fraudulent_transactions_fv = FeatureView(
     entities=["user_id"],
     ttl=timedelta(weeks=52),
     batch_source=BigQuerySource(
-        table_ref="feast-oss.fraud_tutorial.user_has_fraudulent_transactions",
+        table_ref=f"{PROJECT_ID}.{BIGQUERY_DATASET_NAME}.user_has_fraudulent_transactions",
         event_timestamp_column="feature_timestamp"))
