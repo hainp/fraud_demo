@@ -9,7 +9,7 @@ Create resources:
 - 2 BigQuery datasets: feast (conventionally for Feast temp tables), another dataset for project data tables
 
 Set the envs
-- `PROJECT_ID`
+- `GOOGLE_CLOUD_PROJECT`
 - `BUCKET_NAME`
 - `BIGQUERY_DATASET_NAME`
 
@@ -36,7 +36,7 @@ Set the envs
 
 ### Get Online Feature
 
-- Firestore: Cloud Datastore User
+- Firestore: `Cloud Datastore User`
 
 ### GCS
-- GCS: storage.bucket.get, storage.objects.*
+- GCS: `storage.bucket.get`, `storage.objects.*`
